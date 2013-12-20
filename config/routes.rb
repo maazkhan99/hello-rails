@@ -1,6 +1,5 @@
 Myapp::Application.routes.draw do
 
-  root 'farm#noises'
   get "todos/index"
   get "ruby/strings"
   get 'say/hello'
