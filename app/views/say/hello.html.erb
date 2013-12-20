@@ -1,0 +1,19 @@
+<html>
+<head><title>Welcome!</title></head>
+
+<body>
+
+<p>Hello World!</p>
+
+	<% #-- Ruby begins -%>
+	<% #text='hello from local variable' -%>
+	
+	
+	<p><%= @text %></p>
+	<%= link_to('Bye', :controller => 'say', :action => 'goodbye')%>
+	</br>
+	<a href="goodbye">Say Bye!</a>
+	<% #-- Ruby ends -%>
+
+</body>
+</html>
