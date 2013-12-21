@@ -1,5 +1,9 @@
 Myapp::Application.routes.draw do
 
+  root 'pages#home'
+  get 'about' => 'pages#about'
+  #get "pages/home"
+  #get "pages/about"
   get "todos/index"
   get "ruby/strings"
   get 'say/hello'
