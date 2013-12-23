@@ -4,7 +4,10 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable, #:recoverable,
          :rememberable, :trackable, :validatable
 
- def user_params
-params.require(:user).permit(:name)
-end 
+	def user_params
+	params.require(:user).permit(:name)
+	end 
+
+	has_many :pins
+	
 end
